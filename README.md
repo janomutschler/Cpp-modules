@@ -7,7 +7,7 @@ It introduces the basics of Object-Oriented Programming (OOP) in C++ and covers:
 
   -Namespaces
 
-  -Classes
+	-Classes
 
   -Member functions
 
