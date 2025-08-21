@@ -6,8 +6,8 @@ This module is the starting point of the C++ journey at 42.
 It introduces the basics of Object-Oriented Programming (OOP) in C++ and covers:
 
   -Namespaces
-
-	-Classes
+  
+  -Classes
 
   -Member functions
 
