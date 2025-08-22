@@ -14,13 +14,6 @@ C++ Module 01
 		-switch statements
 
 
-You’ll start working more with object lifecycles, memory management, and references, preparing for deeper OOP concepts.
-
-As always, compile with:
-
--Wall -Wextra -Werror -std=c++98
-
-
 Exercise 00: BraiiiiiiinnnzzzZ
 
 	Directory: ex00/
@@ -117,7 +110,7 @@ Exercise 04: Sed is for losers
 
 Exercise 05: Harl 2.0
 
-Directory: ex05/
+	Directory: ex05/
 
 	Files to turn in: Makefile, main.cpp, Harl.{h, hpp}, Harl.cpp
 
