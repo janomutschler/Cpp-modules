@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/22 10:36:46 by jmutschl          #+#    #+#             */
-/*   Updated: 2025/08/22 13:05:44 by jmutschl         ###   ########.fr       */
+/*   Updated: 2025/08/22 16:04:45 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int main(int argc, char** argv)
     if (!in) 
 	{
         std::cerr << "Error: cannot open input file '" << filename << "'.\n";
-        return 3;
+        return 1;
     }
 
     const std::string outFilename = filename + ".replace";
