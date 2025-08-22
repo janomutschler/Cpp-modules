@@ -6,10 +6,11 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 11:17:37 by jmutschl          #+#    #+#             */
-/*   Updated: 2025/08/21 12:19:48 by jmutschl         ###   ########.fr       */
+/*   Updated: 2025/08/22 08:56:26 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #ifndef ZOMBIE_HPP
 #define ZOMBIE_HPP
 
