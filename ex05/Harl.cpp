@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/22 16:09:20 by jmutschl          #+#    #+#             */
-/*   Updated: 2025/08/23 16:34:27 by jmutschl         ###   ########.fr       */
+/*   Updated: 2025/08/23 16:40:23 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,5 @@ void	Harl::complain(std::string level)
 			return ;
 		}
 	}
-	std::cout << "Harl doesnt know how to complain about that\n";
+	std::cout << "[ Probably complaining about insignificant problems ]\n";
 }
