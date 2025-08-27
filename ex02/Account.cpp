@@ -6,11 +6,11 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 09:03:49 by jmutschl          #+#    #+#             */
-/*   Updated: 2025/08/27 13:41:51 by jmutschl         ###   ########.fr       */
+/*   Updated: 2025/08/27 13:51:29 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Account.h"
+#include "Account.hpp"
 #include <iostream>
 #include <ctime>
 #include <iomanip>
