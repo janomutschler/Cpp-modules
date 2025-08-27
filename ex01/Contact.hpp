@@ -6,12 +6,13 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 13:19:03 by jmutschl          #+#    #+#             */
-/*   Updated: 2025/08/20 08:41:20 by jmutschl         ###   ########.fr       */
+/*   Updated: 2025/08/21 08:44:17 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #ifndef CONTACT_HPP
-# define CONTACT_HPP
+#define CONTACT_HPP
 
 #include <string>
 #include <iostream>

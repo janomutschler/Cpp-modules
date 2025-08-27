@@ -6,12 +6,13 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 13:19:08 by jmutschl          #+#    #+#             */
-/*   Updated: 2025/08/20 09:28:48 by jmutschl         ###   ########.fr       */
+/*   Updated: 2025/08/21 08:44:14 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
+#define PHONEBOOK_HPP
 
 #include "Contact.hpp"
 #include <string>
