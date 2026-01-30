@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 13:05:15 by jmutschl          #+#    #+#             */
-/*   Updated: 2026/01/29 10:59:13 by jmutschl         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:13:10 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Bureaucrat
 		static const int	lowestGrade = 150;
 
 		Bureaucrat();
-		explicit Bureaucrat(const std::string& name, int grade);
+		Bureaucrat(const std::string& name, int grade);
 		Bureaucrat(const Bureaucrat& src);
 		Bureaucrat& operator=(const Bureaucrat& src);
 		~Bureaucrat();
