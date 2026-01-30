@@ -1,6 +1,6 @@
 NAME		:=	ex00
 CXX			:=	c++
-CXXFLAGS	:=	-Wall -Wextra -Werror -Iinclude -std=c++98
+CXXFLAGS	:=	-Wall -Wextra -Werror -Iinc -std=c++98
 
 SRCS		:=	src/main.cpp\
 				src/Bureaucrat.cpp\
