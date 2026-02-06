@@ -28,7 +28,7 @@ Throughout this module, I followed these rules:
 What I Implemented
 
 
-ex00 — Function Templates
+# ex00 — Function Templates
 
 In this exercise, I implemented basic function templates to understand how templates replace duplicated code for different types.
 
@@ -46,7 +46,7 @@ This exercise helped me understand template syntax, type deduction, and how comp
 
 
 
-ex01 — iter
+# ex01 — iter
 
 In this exercise, I implemented a template function iter that applies a given function to each element of an array.
 
@@ -68,7 +68,7 @@ This exercise emphasized const correctness and how function pointers interact wi
 
 
 
-ex02 — Array Class Template
+# ex02 — Array Class Template
 
 In this exercise, I implemented a generic dynamic array class without using the STL.
 
@@ -94,30 +94,37 @@ This exercise reinforced:
 
 	Exception safety in template classes
 
-Project Structure
-	cpp07
+# Project Structure
+	cpp07/
 	├── ex00/
 	│   ├── Makefile
-	│   ├── main.cpp
-	│   └── whatever.hpp
+	│   ├── inc/
+	│   │   └── whatever.hpp
+	│   └── src/
+	│       └── main.cpp
 	├── ex01/
 	│   ├── Makefile
-	│   ├── main.cpp
-	│   └── iter.hpp
+	│   ├── inc/
+	│   │   └── iter.hpp
+	│   └── src/
+	│       └── main.cpp
 	└── ex02/
-		├── Makefile
-		├── main.cpp
-		├── Array.hpp
-		└── Array.tpp
+	    ├── Makefile
+	    ├── inc/
+	    │   ├── Array.hpp
+	    │   └── Array.tpp
+	    └── src/
+	        └── main.cpp
 
-How to Build and Run
+
+# How to Build and Run
 
 From inside each exercise directory:
 
 	make
 	./<executable_name>
 
-What I Learned
+# What I Learned
 
 	How C++ templates work at compile time
 
