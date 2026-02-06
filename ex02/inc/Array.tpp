@@ -6,12 +6,9 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 11:48:00 by jmutschl          #+#    #+#             */
-/*   Updated: 2026/02/06 12:07:14 by jmutschl         ###   ########.fr       */
+/*   Updated: 2026/02/06 17:00:46 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#ifndef ARRAY_TPP
-#define ARRAY_TPP
 
 template <typename T>
 Array<T>::Array() : _data(NULL), _size(0) {}
@@ -72,4 +69,3 @@ const T& Array<T>::operator[](unsigned int index) const
 template <typename T>
 unsigned int Array<T>::size() const { return (_size); }
 
-#endif
