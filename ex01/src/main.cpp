@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/07 10:06:11 by jmutschl          #+#    #+#             */
-/*   Updated: 2026/02/08 14:51:14 by jmutschl         ###   ########.fr       */
+/*   Updated: 2026/02/08 17:26:26 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,5 @@ int main()
         std::cerr << "Error: " << e.what() << std::endl;
     }
 
-    return 0;
+    return (0);
 }
