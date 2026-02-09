@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/07 10:06:11 by jmutschl          #+#    #+#             */
-/*   Updated: 2026/02/08 17:26:26 by jmutschl         ###   ########.fr       */
+/*   Updated: 2026/02/09 09:45:34 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,33 +21,33 @@ int main()
 {
     try
     {
-        const unsigned int N = 50000;
+        const unsigned int N = 10000;
         Span sp(N);
 
         std::srand(std::time(NULL));
 
-		unsigned int i = 0;
+        unsigned int i = 0;
         std::vector<int>	values;
         for (; i < (N / 2); ++i)
             values.push_back(std::rand());
         sp.addNumber(values.begin(), values.end());
-		
-		std::list<int>		lst;
+
+        std::list<int>		lst;
         for (; i < (N - 1); ++i)
-			lst.push_back(std::rand());
-		sp.addNumber(lst.begin(), lst.end());
-		
+            lst.push_back(std::rand());
+        sp.addNumber(lst.begin(), lst.end());
+
         std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;
         std::cout << "Longest span:  " << sp.longestSpan() << std::endl;
 
         // test overflow
         try {
             sp.addNumber(42);
-			std::cout << "Added succesfully" <<std::endl;
+            std::cout << "Added succesfully" <<std::endl;
         } catch (const std::exception& e) {
             std::cout << "Should not give exception: " << e.what() << std::endl;
         }
-		try {
+        try {
             sp.addNumber(-42);
         } catch (const std::exception& e) {
             std::cout << "Expected exception: " << e.what() << std::endl;
