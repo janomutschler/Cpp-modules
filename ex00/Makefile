@@ -1,9 +1,11 @@
-NAME		:=	ex00
+NAME		:=	btc
 CXX			:=	c++
 CXXFLAGS	:=	-Wall -Wextra -Werror -Iinc -std=c++98
 
 SRCS		:=	src/main.cpp\
-				src/BitcoinExchange.cpp
+				src/BitcoinExchange.cpp\
+				src/BitcoinExchangeDatabase.cpp\
+       			src/BitcoinExchangeParsing.cpp
 OBJ_DIR		:=	obj
 OBJS		=	$(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 
