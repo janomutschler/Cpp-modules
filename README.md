@@ -12,33 +12,33 @@ Read historical Bitcoin prices from a CSV file and evaluate values from an input
 
 What I learned
 
-		How to parse structured input safely (date | value)
+	• How to parse structured input safely (date | value)
 
-		Why std::map is perfect for time-based lookup
+	• Why std::map is perfect for time-based lookup
 
-				automatic sorting
+			- automatic sorting
 
-				lower_bound() for closest previous date
+			- lower_bound() for closest previous date
 
-		How strict input validation quickly explodes in complexity:
+	• How strict input validation quickly explodes in complexity:
 
-				invalid dates
+			- invalid dates
 
-				negative values
+			- negative values
 
-				values > 1000
+			- values > 1000
 
-				malformed lines
+			- malformed lines
 
-		Separating responsibilities matters:
+	• Separating responsibilities matters:
 
-				parsing
+			- parsing
 
-				database loading
+			- database loading
 
-				evaluation logic
+			- evaluation logic
 
-		Error handling should be precise and explicit, not generic
+	• Error handling should be precise and explicit, not generic
 
 This exercise forced me to stop “just parsing strings” and start designing data flow.
 
@@ -49,31 +49,31 @@ Evaluate a mathematical expression written in Reverse Polish Notation.
 
 What I learned
 
-		Why a stack is the natural data structure for RPN
+	• Why a stack is the natural data structure for RPN
 
-		How stack-based evaluation works step by step:
+	• How stack-based evaluation works step by step:
 
-				push operands
+			- push operands
 
-				pop two values on operator
+			- pop two values on operator
 
-				apply operation
+			- apply operation
 
-				push result back
+			- push result back
 
-		How fragile evaluation becomes without validation:
+	• How fragile evaluation becomes without validation:
 
-				too many operators
+			- too many operators
 
-				too many operands
+			- too many operands
 
-				division by zero
+			- division by zero
 
-				invalid characters
+			- invalid characters
 
-		That “the stack should end with exactly one value” is a hard correctness rule
+	• That “the stack should end with exactly one value” is a hard correctness rule
 
-		Writing small helper functions (like applyOperator) keeps logic readable
+	• Writing small helper functions (like applyOperator) keeps logic readable
 
 This exercise was a good reminder that simple problems still need strict rules to be correct.
 
@@ -86,89 +86,89 @@ This was by far the hardest exercise in the module.
 
 What I learned
 
-		How the merge-insert algorithm actually works:
+	• How the merge-insert algorithm actually works:
 
-				pairing elements
+			- pairing elements
 
-				recursive sorting of pairs
+			- recursive sorting of pairs
 
-				insertion using the Jacobsthal sequence
+			- insertion using the Jacobsthal sequence
 
-		Why the STL does not magically give you performance
+	• Why the STL does not magically give you performance
 
-		The real differences between:
+	• The real differences between:
 
-				std::vector
+			- std::vector
 
-				std::deque
+			- std::deque
 
-		That algorithm design matters more than container choice
+	• That algorithm design matters more than container choice
 
-		Measuring time correctly means:
+	• Measuring time correctly means:
 
-				include parsing
+			- include parsing
 
-				include copying
+			- include copying
 
-				include insertion
+			- include insertion
 
-		Why writing separate implementations per container is sometimes the right call
+	• Why writing separate implementations per container is sometimes the right call
 
 This exercise finally connected theoretical algorithms with real runtime behavior.
 
 # Project Structure
 
-		├── ex00
-		│   ├── input.txt
-		│   ├── data.csv
-		│   ├── inc/
-		│   │   └── BitcoinExchange.hpp
-		│   ├── src/
-		│   │   ├── BitcoinExchange.cpp
-		│   │   ├── BitcoinExchangeDatabase.cpp
-		│   │   ├── BitcoinExchangeParsing.cpp
-		│   │   └── main.cpp
-		│   └── Makefile
-		│
-		├── ex01
-		│   ├── inc/
-		│   │   └── RPN.hpp
-		│   ├── src/
-		│   │   ├── RPN.cpp
-		│   │   └── main.cpp
-		│   └── Makefile
-		│
-		├── ex02
-		│   ├── inc/
-		│   │   ├── PmergeMe.hpp
-		│   │   └── utils.hpp
-		│   ├── src/
-		│   │   ├── PmergeMe.cpp
-		│   │   ├── vector.cpp
-		│   │   ├── deque.cpp
-		│   │   ├── jacobsthalSequence.cpp
-		│   │   ├── parsing.cpp
-		│   │   ├── utils.cpp
-		│   │   └── main.cpp
-		│   └── Makefile
-		│
-		└── README.md
+	├── ex00
+	│   ├── input.txt
+	│   ├── data.csv
+	│   ├── inc/
+	│   │   └── BitcoinExchange.hpp
+	│   ├── src/
+	│   │   ├── BitcoinExchange.cpp
+	│   │   ├── BitcoinExchangeDatabase.cpp
+	│   │   ├── BitcoinExchangeParsing.cpp
+	│   │   └── main.cpp
+	│   └── Makefile
+	│
+	├── ex01
+	│   ├── inc/
+	│   │   └── RPN.hpp
+	│   ├── src/
+	│   │   ├── RPN.cpp
+	│   │   └── main.cpp
+	│   └── Makefile
+	│
+	├── ex02
+	│   ├── inc/
+	│   │   ├── PmergeMe.hpp
+	│   │   └── utils.hpp
+	│   ├── src/
+	│   │   ├── PmergeMe.cpp
+	│   │   ├── vector.cpp
+	│   │   ├── deque.cpp
+	│   │   ├── jacobsthalSequence.cpp
+	│   │   ├── parsing.cpp
+	│   │   ├── utils.cpp
+	│   │   └── main.cpp
+	│   └── Makefile
+	│
+	└── README.md
 
 # General Takeaways
 
-		STL containers are tools, not solutions
+	• STL containers are tools, not solutions
 
-		Constraints (like “you can’t reuse containers”) accelerate learning
+	• Constraints (like “you can’t reuse containers”) accelerate learning
 
-		Clean separation of logic beats clever code
+	• Clean separation of logic beats clever code
 
-		Performance discussions only matter when:
+	• Performance discussions only matter when:
 
-				correctness is guaranteed
+			- correctness is guaranteed
 
-				input size is realistic
+			- input size is realistic
 
-		Debugging algorithms is much harder than debugging syntax
+	• Debugging algorithms is much harder than debugging syntax
 
 This module pushed me from “I know what a vector is” to
 “I know when and why I should use it.”
@@ -177,7 +177,7 @@ This module pushed me from “I know what a vector is” to
 
 All exercises follow the same rules:
 
-		c++ -Wall -Wextra -Werror -std=c++98
+	c++ -Wall -Wextra -Werror -std=c++98
 
 
 Each directory contains its own Makefile.
