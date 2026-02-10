@@ -1,9 +1,14 @@
-NAME		:=	ex02
+NAME		:=	PmergeMe
 CXX			:=	c++
 CXXFLAGS	:=	-Wall -Wextra -Werror -Iinc -std=c++98
 
 SRCS		:=	src/main.cpp\
-				src/PmergeMe.cpp
+				src/PmergeMe.cpp\
+				src/jacobsthalSequence.cpp\
+				src/utils.cpp\
+				src/parsing.cpp\
+				src/vector.cpp\
+				src/deque.cpp
 OBJ_DIR		:=	obj
 OBJS		=	$(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 
