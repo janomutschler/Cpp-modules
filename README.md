@@ -1,3 +1,5 @@
+*This project has been created as part of the 42 curriculum by jmutschl.*
+
 # CPP Module 05 — Repetition & Exceptions (ex00–ex03)
 
 This module was all about designing a small “bureaucracy” system while practicing exceptions, class relationships, and polymorphism in C++98. The big theme: keep objects valid, enforce rules with exceptions, and connect classes through clean interfaces.
