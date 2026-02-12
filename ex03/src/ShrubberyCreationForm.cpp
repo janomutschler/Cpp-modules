@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/31 13:01:56 by jmutschl          #+#    #+#             */
-/*   Updated: 2026/01/31 13:01:58 by jmutschl         ###   ########.fr       */
+/*   Updated: 2026/02/12 09:31:57 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,10 @@ const std::string&	ShrubberyCreationForm::getTarget() const {return (_target);}
 void	ShrubberyCreationForm::executeAction() const
 {
 	const std::string	filename = _target + "_shrubbery";
-    std::ofstream out(filename.c_str()); // C++98 needs c_str()
+    std::ofstream out(filename.c_str());
 
     if (!out.is_open())
-        throw std::runtime_error("could not open shrubbery file"); // or your own exception
+        throw std::runtime_error("could not open shrubbery file");
 
     out <<
 "       _-_\n"
