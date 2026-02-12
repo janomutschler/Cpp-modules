@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/31 14:07:35 by jmutschl          #+#    #+#             */
-/*   Updated: 2026/01/31 14:07:46 by jmutschl         ###   ########.fr       */
+/*   Updated: 2026/02/12 09:18:37 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main()
 	std::cout << "=== Creating Bureaucrats ===" << std::endl;
 	Bureaucrat boss("Boss", 1);
 	Bureaucrat mid("Mid", 50);
-	Bureaucrat internB("Intern", 150);
+	Bureaucrat internB("Low", 150);
 
 	std::cout << std::endl << "=== Intern creates valid forms ===" << std::endl;
 	Intern someRandomIntern;
