@@ -1,4 +1,4 @@
-NAME		:=	ex01
+NAME		:=	serialize
 CXX			:=	c++
 CXXFLAGS	:=	-Wall -Wextra -Werror -Iinc -std=c++98
 

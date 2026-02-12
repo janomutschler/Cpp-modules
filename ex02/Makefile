@@ -1,4 +1,4 @@
-NAME		:=	ex02
+NAME		:=	identify
 CXX			:=	c++
 CXXFLAGS	:=	-Wall -Wextra -Werror -Iinc -std=c++98
 
