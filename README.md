@@ -1,3 +1,5 @@
+*This project has been created as part of the 42 curriculum by jmutschl.*
+
 # C++ Module 06 — C++ Casts
 
 This repository contains my solutions for C++ Module 06 at 42.
