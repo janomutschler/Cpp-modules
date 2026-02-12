@@ -1,5 +1,6 @@
-# cpp07
-CPP Module 07 — Templates
+*This project has been created as part of the 42 curriculum by jmutschl.*
+
+# CPP Module 07 — Templates
 
 This project is part of the 42 C++ curriculum and focuses on learning and applying C++ templates.
 The goal of this module was to understand how to write type-generic code, handle const correctness, and manage memory safely, all while staying compliant with C++98 and without using the STL.
