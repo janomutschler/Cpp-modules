@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 13:08:03 by jmutschl          #+#    #+#             */
-/*   Updated: 2026/02/10 19:20:00 by jmutschl         ###   ########.fr       */
+/*   Updated: 2026/02/13 09:45:50 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static int	parseNumber(const std::string& s)
 		start = 1;
 	}
 
-	// Ensure remaining chars are digits only
+	// check if chars are digits only
 	for (size_t i = start; i < s.size(); ++i)
 	{
 		if (s[i] < '0' || s[i] > '9')
